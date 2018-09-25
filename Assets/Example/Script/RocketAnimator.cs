@@ -10,21 +10,21 @@ public class RocketAnimator : MonoBehaviour
     [SerializeField]
     float flightDuration, flightDistance, flightStagger;
 
-    IPRunner rocketAnimation;
+    IPInterpolator rocketAnimation;
 
-    List<Coroutine> running = new List<Coroutine>();
+    List<IPRunner> running = new List<IPRunner>();
 
     void Start()
     {
-        //Can initialize an IPRunner once and compose it further before executing
-        rocketAnimation = new IPRunner()
+        //Can initialize an IPInterpolator once and compose it further before executing
+        rocketAnimation = new IPInterpolator()
             .WithDuration(flightDuration)
             .WithEasingFunction(Mathf.SmoothStep);
     }
 
     public void Launch()
     {
-        running.ForEach(coroutine => StopCoroutine(coroutine));
+        running.ForEach(runner => runner.Stop());
         running.Clear();
 
         for (int idx = 0; idx < rocketObjects.Length; idx++)

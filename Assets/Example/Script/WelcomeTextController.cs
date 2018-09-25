@@ -33,7 +33,7 @@ public class WelcomeTextController : MonoBehaviour
     {
         text.text = "";
 
-        new IPRunner(t => text.text = str.Substring(0, (int)(t * str.Length)))
+        new IPInterpolator(t => text.text = str.Substring(0, (int)(t * str.Length)))
             .WithDuration(typingDuration)
             .WithRealTime(true)
             .Execute(this);

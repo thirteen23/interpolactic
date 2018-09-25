@@ -30,7 +30,7 @@ public class UIToggle : MonoBehaviour {
 
         fadableCanvasGroup.interactable = UIVisible;
 
-        IPRunner anim = new IPRunner(t => fadableCanvasGroup.alpha = Mathf.Lerp(fromAlpha, toAlpha, t))
+        IPInterpolator anim = new IPInterpolator(t => fadableCanvasGroup.alpha = Mathf.Lerp(fromAlpha, toAlpha, t))
             .WithDuration(fadeDuration)
             .WithEasingFunction(Mathf.SmoothStep)
             .WithRealTime(true);

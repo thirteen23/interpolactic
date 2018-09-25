@@ -100,8 +100,8 @@
 /Users/max/Dev/Interpolactic/Temp/bin/Debug/UnityEngine.xml
 /Users/max/Dev/Interpolactic/Temp/bin/Debug/UnityEditor.dll.mdb
 /Users/max/Dev/Interpolactic/Temp/bin/Debug/UnityEditor.xml
-/Users/max/Dev/Interpolactic/Temp/bin/Debug/Unity.PackageManagerUI.Editor.dll.mdb
 /Users/max/Dev/Interpolactic/Temp/bin/Debug/UnityEditor.StandardEvents.dll.mdb
+/Users/max/Dev/Interpolactic/Temp/bin/Debug/Unity.PackageManagerUI.Editor.dll.mdb
 /Users/max/Dev/Interpolactic/Temp/bin/Debug/UnityEngine.AIModule.dll.mdb
 /Users/max/Dev/Interpolactic/Temp/bin/Debug/UnityEngine.AIModule.xml
 /Users/max/Dev/Interpolactic/Temp/bin/Debug/UnityEngine.ARModule.dll.mdb

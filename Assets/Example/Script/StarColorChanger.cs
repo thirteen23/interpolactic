@@ -12,7 +12,7 @@ public class StarColorChanger : MonoBehaviour
     [SerializeField]
     float transitionDuration;
 
-    Coroutine running;
+    IPRunner running;
 
     int colorIndex;
 
@@ -41,9 +41,9 @@ public class StarColorChanger : MonoBehaviour
             particleRenderer.material.SetColor(colorKey, Color.Lerp(from, to, t));
 
         if (running != null)
-            StopCoroutine(running);
+            running.Stop();
 
-        running = new IPRunner(step)
+        running = new IPInterpolator(step)
             .WithDuration(animated ? transitionDuration : 0)
             .Execute(this);
     }
