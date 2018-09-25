@@ -71,6 +71,7 @@
     <Compile Include="Assets\Source\IPInterpolator.cs" />
     <Compile Include="Assets\Source\IPInterpolator.MEC.cs" />
     <Compile Include="Assets\Source\IPRunner.cs" />
+    <Compile Include="Assets\Source\IPRunnerCoroutine.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/max/Dev/Interpolactic/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
@@ -308,7 +309,6 @@
     <Reference Include="Boo.Lang">
       <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
     </Reference>
-    <Compile Include="Assets\Source\IPRunnerCoroutine.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">

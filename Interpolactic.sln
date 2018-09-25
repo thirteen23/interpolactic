@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio for Mac
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{B3CAA9B6-E379-AFA7-9817-ECF58F67DA03}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interpolactic", "Assembly-CSharp.csproj", "{B3CAA9B6-E379-AFA7-9817-ECF58F67DA03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{833539B4-2EE4-1891-339A-AD8D580B8A65}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interpolactic", "Assembly-CSharp-firstpass.csproj", "{833539B4-2EE4-1891-339A-AD8D580B8A65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

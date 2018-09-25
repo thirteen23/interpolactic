@@ -1,15 +1,13 @@
 ﻿<Properties StartupConfiguration="{B3CAA9B6-E379-AFA7-9817-ECF58F67DA03}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Source/NewClass.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Source/IPRunnerCoroutine.cs">
     <Files>
       <File FileName="Assets/Source/IPInterpolator.cs" Line="181" Column="26" />
       <File FileName="Assets/Source/IPInterpolator.Coroutine.cs" Line="52" Column="65" />
       <File FileName="Assets/Source/IPInterpolator.MEC.cs" Line="19" Column="10" />
-      <File FileName="Assets/Source/IPRunner.cs" Line="24" Column="37" />
-      <File FileName="Assets/Example/Script/Orbiter.cs" Line="16" Column="104" />
-      <File FileName="Assets/Example/Script/StarColorChanger.cs" Line="44" Column="28" />
-      <File FileName="Assets/Example/Script/RocketAnimator.cs" Line="11" Column="1" />
-      <File FileName="Assets/Source/NewClass.cs" Line="4" Column="21" />
+      <File FileName="Assets/Example/Script/Orbiter.cs" Line="19" Column="5" />
+      <File FileName="Assets/Source/IPRunner.cs" Line="76" Column="15" />
+      <File FileName="Assets/Source/IPRunnerCoroutine.cs" Line="18" Column="51" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

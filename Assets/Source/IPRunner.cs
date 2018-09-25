@@ -5,28 +5,17 @@ using UnityEngine;
 
 namespace Interpolactic
 {
-    public partial class IPInterpolator
+    public abstract class IPRunner
     {
-        public IPRunner Execute(MonoBehaviour monoBehavior)
-        {
-            IPRunner runner = new IPRunner(this, monoBehavior);
+        protected abstract float DeltaTime { get; }
+        protected abstract IEnumerator DelayAndExecute { get; }
 
-            runner.Play();
-
-            return runner;
-        }
-    }
-
-    public class IPRunner
-    {
         public bool finished { get; private set; }
         public bool started { get; private set; }
         public bool playing { get; private set; }
 
-        IPInterpolator interpolator;
-        MonoBehaviour monoBehaviour;
-
-        Coroutine coroutine;
+        protected IPInterpolator interpolator;
+        protected MonoBehaviour monoBehaviour;
 
         float elapsedTime;
 
@@ -40,40 +29,30 @@ namespace Interpolactic
             }
         }
 
-        public IPRunner(IPInterpolator interpolator, MonoBehaviour monoBehaviour)
+        public IPRunner(IPInterpolator interpolator)
         {
             this.interpolator = interpolator;
-            this.monoBehaviour = monoBehaviour;
         }
 
-        public void Stop()
-        {
-            if (coroutine != null)
-                monoBehaviour.StopCoroutine(coroutine);
-            
+        public virtual void Stop()
+        {  
+            playing = false;
+
             if (!finished && interpolator.onCancel != null)
                 interpolator.onCancel(normalizedScaledTime);
-
-            playing = false;
-            coroutine = null;
         }
 
-        public void Play()
+        public virtual void Play()
         {
             if (!started)
                 Start();
 
             playing = true;
-            
-            coroutine = monoBehaviour.StartCoroutine(DelayAndExecute);
         }
 
-        public void Pause()
+        public virtual void Pause()
         {
-            monoBehaviour.StopCoroutine(coroutine);
-
             playing = false;
-            coroutine = null;
         }
 
         internal void Start()
@@ -84,36 +63,7 @@ namespace Interpolactic
                 interpolator.PerformStep(0);
         }
 
-        internal float DeltaTime
-        {
-            get
-            {
-                return interpolator.realTime ? Time.unscaledDeltaTime : Time.deltaTime;
-            }
-        }
-
-        internal IEnumerator DelayAndExecute
-        {
-            get
-            {
-                if (interpolator.delay > 0)
-                {
-                    yield return 0;
-
-                    if (interpolator.delayAfterFirstStep)
-                        interpolator.PerformStep(0);
-
-                    if (interpolator.realTime)
-                        yield return new WaitForSecondsRealtime(interpolator.delay);
-                    else
-                        yield return new WaitForSeconds(interpolator.delay);
-                }
-
-                yield return this.Coroutine();
-            }
-        }
-
-        internal IEnumerator<float> Coroutine()
+        internal IEnumerator<float> RunCoroutine()
         {                
             while (interpolator.repeats || elapsedTime < interpolator.duration)
             {
