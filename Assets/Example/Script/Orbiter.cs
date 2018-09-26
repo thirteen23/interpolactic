@@ -16,7 +16,9 @@ public class Orbiter : MonoBehaviour
         running = new IPInterpolator(t => toRotate.transform.rotation = Quaternion.Euler(0, 0, t * 360f))
                 .WithDuration(duration)
                 .WithRepeats(true)
-                .Execute(this);
+                .BuildMEC();
+        
+        running.Play();
     }
 
     public void StartStopOrbit()

@@ -40,6 +40,6 @@ public class UIToggle : MonoBehaviour {
         else
             anim = anim.WithCompletion(() => fadableCanvasGroup.gameObject.SetActive(false));
 
-        anim.Execute(this);
+        anim.Build(this).Play();
     }
 }

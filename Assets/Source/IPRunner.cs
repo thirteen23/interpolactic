@@ -8,7 +8,6 @@ namespace Interpolactic
     public abstract class IPRunner
     {
         protected abstract float DeltaTime { get; }
-        protected abstract IEnumerator DelayAndExecute { get; }
 
         public bool finished { get; private set; }
         public bool started { get; private set; }

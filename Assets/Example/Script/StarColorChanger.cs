@@ -45,6 +45,8 @@ public class StarColorChanger : MonoBehaviour
 
         running = new IPInterpolator(step)
             .WithDuration(animated ? transitionDuration : 0)
-            .Execute(this);
+            .Build(this);
+
+        running.Play();
     }
 }

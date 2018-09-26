@@ -72,6 +72,7 @@
     <Compile Include="Assets\Source\IPInterpolator.MEC.cs" />
     <Compile Include="Assets\Source\IPRunner.cs" />
     <Compile Include="Assets\Source\IPRunnerCoroutine.cs" />
+    <Compile Include="Assets\Source\IPRunnerMEC.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/max/Dev/Interpolactic/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

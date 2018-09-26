@@ -36,9 +36,12 @@ public class RocketAnimator : MonoBehaviour
                     .WithAction(t => SetY(rocket, t * flightDistance))
                     .WithCompletion(() => SetY(rocket, 0))
                     .WithDelay(flightStagger * idx)
-                    .Execute(this)
+                    .WithDelayAfterFirstStep(true)
+                    .Build(this)
             );
         }
+
+        running.ForEach(runner => runner.Play());
     }
 
     void SetY(Transform t, float y)

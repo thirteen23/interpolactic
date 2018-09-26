@@ -36,6 +36,7 @@ public class WelcomeTextController : MonoBehaviour
         new IPInterpolator(t => text.text = str.Substring(0, (int)(t * str.Length)))
             .WithDuration(typingDuration)
             .WithRealTime(true)
-            .Execute(this);
+            .BuildMEC()
+            .Play();
     }
 }
