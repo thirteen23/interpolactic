@@ -1,15 +1,11 @@
 ﻿<Properties StartupConfiguration="{B3CAA9B6-E379-AFA7-9817-ECF58F67DA03}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Example/Script/WelcomeTextController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Interpolactic/Source/Interpolation.cs">
     <Files>
-      <File FileName="Assets/Source/IPInterpolator.cs" Line="181" Column="26" />
-      <File FileName="Assets/Source/IPInterpolator.Coroutine.cs" Line="47" Column="37" />
-      <File FileName="Assets/Source/IPInterpolator.MEC.cs" Line="48" Column="61" />
-      <File FileName="Assets/Example/Script/Orbiter.cs" Line="19" Column="17" />
-      <File FileName="Assets/Source/IPRunner.cs" Line="24" Column="14" />
-      <File FileName="Assets/Source/IPRunnerCoroutine.cs" Line="56" Column="9" />
-      <File FileName="Assets/Source/IPRunnerMEC.cs" Line="84" Column="13" />
-      <File FileName="Assets/Example/Script/WelcomeTextController.cs" Line="39" Column="23" />
+      <File FileName="Assets/Interpolactic/Source/Interpolation.Runner.Coroutine.cs" Line="4" Column="24" />
+      <File FileName="Assets/Interpolactic/Source/Interpolation.cs" Line="260" Column="13" />
+      <File FileName="Assets/Interpolactic/Source/Interpolation.Runner.cs" Line="103" Column="27" />
+      <File FileName="Assets/Interpolactic/Example/Scripts/WelcomeTextController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

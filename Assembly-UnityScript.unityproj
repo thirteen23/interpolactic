@@ -60,17 +60,30 @@
      <Compile Include="Assets\Source\html\search\all_2.js" />
      <Compile Include="Assets\Source\html\search\all_3.js" />
      <Compile Include="Assets\Source\html\search\all_4.js" />
+     <Compile Include="Assets\Source\html\search\all_5.js" />
+     <Compile Include="Assets\Source\html\search\all_6.js" />
+     <Compile Include="Assets\Source\html\search\all_7.js" />
+     <Compile Include="Assets\Source\html\search\all_8.js" />
      <Compile Include="Assets\Source\html\search\classes_0.js" />
      <Compile Include="Assets\Source\html\search\files_0.js" />
      <Compile Include="Assets\Source\html\search\functions_0.js" />
      <Compile Include="Assets\Source\html\search\functions_1.js" />
      <Compile Include="Assets\Source\html\search\functions_2.js" />
+     <Compile Include="Assets\Source\html\search\functions_3.js" />
+     <Compile Include="Assets\Source\html\search\functions_4.js" />
+     <Compile Include="Assets\Source\html\search\functions_5.js" />
+     <Compile Include="Assets\Source\html\search\functions_6.js" />
      <Compile Include="Assets\Source\html\search\namespaces_0.js" />
      <Compile Include="Assets\Source\html\search\pages_0.js" />
      <Compile Include="Assets\Source\html\search\properties_0.js" />
      <Compile Include="Assets\Source\html\search\properties_1.js" />
+     <Compile Include="Assets\Source\html\search\properties_2.js" />
+     <Compile Include="Assets\Source\html\search\properties_3.js" />
+     <Compile Include="Assets\Source\html\search\properties_4.js" />
      <Compile Include="Assets\Source\html\search\search.js" />
      <Compile Include="Assets\Source\html\search\searchdata.js" />
+     <Compile Include="Assets\Source\html\search\variables_0.js" />
+     <Compile Include="Assets\Source\html\search\variables_1.js" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>/Users/max/Dev/Interpolactic/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>

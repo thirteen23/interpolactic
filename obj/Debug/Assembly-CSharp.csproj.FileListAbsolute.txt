@@ -1,5 +1,3 @@
-/Users/max/Dev/Interpolactic/obj/Debug/Assembly-CSharp.csprojResolveAssemblyReference.cache
-/Users/max/Dev/Interpolactic/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache
 /Users/max/Dev/Interpolactic/Temp/bin/Debug/Assembly-CSharp.dll
 /Users/max/Dev/Interpolactic/Temp/bin/Debug/Assembly-CSharp.pdb
 /Users/max/Dev/Interpolactic/Temp/bin/Debug/Boo.Lang.dll
@@ -98,7 +96,6 @@
 /Users/max/Dev/Interpolactic/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/max/Dev/Interpolactic/Temp/bin/Debug/Unity.Cecil.Pdb.dll
 /Users/max/Dev/Interpolactic/Temp/bin/Debug/Unity.Cecil.Mdb.dll
-/Users/max/Dev/Interpolactic/Temp/bin/Debug/Assembly-CSharp-firstpass.pdb
 /Users/max/Dev/Interpolactic/Temp/bin/Debug/UnityEngine.dll.mdb
 /Users/max/Dev/Interpolactic/Temp/bin/Debug/UnityEngine.xml
 /Users/max/Dev/Interpolactic/Temp/bin/Debug/UnityEditor.dll.mdb
@@ -239,5 +236,6 @@
 /Users/max/Dev/Interpolactic/Temp/bin/Debug/UnityEngine.StandardEvents.dll.mdb
 /Users/max/Dev/Interpolactic/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
 /Users/max/Dev/Interpolactic/Temp/bin/Debug/Unity.IvyParser.dll.mdb
+/Users/max/Dev/Interpolactic/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache
 /Users/max/Dev/Interpolactic/obj/Debug/Assembly-CSharp.dll
 /Users/max/Dev/Interpolactic/obj/Debug/Assembly-CSharp.pdb
