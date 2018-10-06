@@ -5,9 +5,15 @@ namespace Interpolactic
 {
     public partial class Interpolation
     {
-        public Runner Build(MonoBehaviour monoBehavior)
+        /**
+         * Creates a Runner object for the Interpolation.
+         * 
+         * \param monoBehaviour The MonoBehaviour object to be used as the starter
+         * and stopper for the Runner's internal Coroutine.
+         **/
+        public Runner Build(MonoBehaviour monoBehaviour)
         {
-            return new CoroutineRunner(this, monoBehavior);
+            return new CoroutineRunner(this, monoBehaviour);
         }
 
         class CoroutineRunner : Runner

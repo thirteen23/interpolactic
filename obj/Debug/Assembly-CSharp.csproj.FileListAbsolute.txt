@@ -239,3 +239,4 @@
 /Users/max/Dev/Interpolactic/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache
 /Users/max/Dev/Interpolactic/obj/Debug/Assembly-CSharp.dll
 /Users/max/Dev/Interpolactic/obj/Debug/Assembly-CSharp.pdb
+/Users/max/Dev/Interpolactic/obj/Debug/Assembly-CSharp.csprojResolveAssemblyReference.cache

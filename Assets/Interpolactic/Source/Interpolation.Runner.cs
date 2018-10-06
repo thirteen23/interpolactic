@@ -5,6 +5,14 @@ namespace Interpolactic
 {
     public partial class Interpolation
     {
+        /**
+         * A Runner is required to execute an Interpolation. The Runner class 
+         * not only handles handles the implementation of an Interpolation, but
+         * offers a suite of functions for playback control. 
+         * 
+         * Runners don't start automatically, and so to start a runner the caller
+         * must invoke Play() to perform the Interpolation.
+         **/
         public abstract class Runner
         {
             /**
