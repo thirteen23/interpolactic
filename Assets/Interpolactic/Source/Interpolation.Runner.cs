@@ -52,9 +52,15 @@ namespace Interpolactic
             {
                 get
                 {
-                    //Use modulus of elapsed time in case of repeats
-                    float modulus = Mathf.Repeat(elapsedTime, interpolation.duration);
-                    return interpolation.easingFunction(0, 1, modulus / interpolation.duration);
+                    //Clamp time to bounds [0, interpolation.duration] in case of repeats
+                    float clampedElapsedTime;
+
+                    if (interpolation.pingPong)
+                        clampedElapsedTime = Mathf.PingPong(elapsedTime, interpolation.duration);
+                    else
+                        clampedElapsedTime = Mathf.Repeat(elapsedTime, interpolation.duration);
+
+                    return interpolation.easingFunction(0, 1, clampedElapsedTime / interpolation.duration);
                 }
             }
 

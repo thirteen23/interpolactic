@@ -130,6 +130,8 @@ namespace Interpolactic
          */
         public bool repeats { get; private set; }
 
+        public bool pingPong { get; private set; }
+
         /**
          * Create a new Interpolator with no actions.
          **/
@@ -155,6 +157,7 @@ namespace Interpolactic
             duration = animationBlock.duration;
             delay = animationBlock.delay;
             repeats = animationBlock.repeats;
+            pingPong = animationBlock.pingPong;
 
             easingFunction = animationBlock.easingFunction;
 
@@ -250,6 +253,14 @@ namespace Interpolactic
         {
             Interpolation block = new Interpolation(this);
             block.repeats = repeats;
+            return block;
+        }
+
+        public Interpolation PingPong(bool pingPong)
+        {
+            Interpolation block = new Interpolation(this);
+            block.pingPong = pingPong;
+            block.repeats = true;
             return block;
         }
 
