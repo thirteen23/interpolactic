@@ -111,7 +111,7 @@ namespace Interpolactic
          * Time.timeScale.
          * 
          * Defaults to false.
-         */
+         **/
         public bool realTime { get; private set; }
 
         /**
@@ -120,16 +120,24 @@ namespace Interpolactic
          * at its initial state while waiting for the delay to end.
          * 
          * Defaults to false.
-         */
+         **/
         public bool firstStepBeforeDelay { get; private set; }
 
         /**
          * If true, the associated Runner will repeat until stopped.
          * 
          * Defaults to false.
-         */
+         **/
         public bool repeats { get; private set; }
 
+        /**
+         * If true, the interpolation will play itself back in reverse after finishing
+         * its first pass.
+         * 
+         * Can be combined with realTime to ping-pong indefinitely.
+         * 
+         * Defaults to false.
+         **/
         public bool pingPong { get; private set; }
 
         /**
@@ -256,11 +264,14 @@ namespace Interpolactic
             return block;
         }
 
+        /**
+         * Create a clone of Interpolation with ping-pong enabled or disabled.
+         * \param pingPong should the interpolation ping-pong?
+         **/
         public Interpolation PingPong(bool pingPong)
         {
             Interpolation block = new Interpolation(this);
             block.pingPong = pingPong;
-            block.repeats = true;
             return block;
         }
 

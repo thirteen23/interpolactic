@@ -124,7 +124,9 @@ namespace Interpolactic
              **/
             protected IEnumerator<float> PerformInterpolation()
             {
-                while (interpolation.repeats || elapsedTime < interpolation.duration)
+                float totalRuntime = interpolation.duration * (interpolation.pingPong ? 2 : 1);
+
+                while (interpolation.repeats || elapsedTime < totalRuntime)
                 {
                     interpolation.PerformStep(normalizedScaledTime);
 
@@ -133,7 +135,7 @@ namespace Interpolactic
                     yield return 0;
                 }
 
-                interpolation.PerformStep(1);
+                interpolation.PerformStep(interpolation.pingPong ? 0 : 1);
 
                 finished = true;
 

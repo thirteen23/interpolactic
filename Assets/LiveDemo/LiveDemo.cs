@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using Interpolactic;
 
 public class LiveDemo : MonoBehaviour
@@ -15,6 +13,7 @@ public class LiveDemo : MonoBehaviour
         new Interpolation(t => obj.transform.position = start + new Vector3(distance * t, 0, 0))
             .Duration(1.3f)
             .PingPong(true)
+            //.Repeats(true)
             .EasingFunction(Mathf.SmoothStep)
             .Build(this)
             .Play();
