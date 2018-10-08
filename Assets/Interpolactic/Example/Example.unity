@@ -2321,6 +2321,7 @@ GameObject:
   - component: {fileID: 1564074438}
   - component: {fileID: 1564074437}
   - component: {fileID: 1564074440}
+  - component: {fileID: 1564074441}
   m_Layer: 0
   m_Name: Stars
   m_TagString: Untagged
@@ -6945,6 +6946,19 @@ MonoBehaviour:
   - {r: 1, g: 0, b: 0.9449339, a: 1}
   particles: {fileID: 1564074438}
   transitionDuration: 1
+--- !u!114 &1564074441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1564074436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bebaa54d705604881a457107ab41dd93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 0.2
+  duration: 3
 --- !u!1 &1711787100
 GameObject:
   m_ObjectHideFlags: 0
